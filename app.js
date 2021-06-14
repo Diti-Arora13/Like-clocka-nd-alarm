@@ -86,3 +86,16 @@ function selectOption2(e){
         fullAlarm.style.visibility = "visible";
     }
 }
+
+
+// Rememberbtn animation
+
+const spanEle = document.querySelector("span")
+const remember = document.querySelector(".remember")
+
+
+    spanEle.addEventListener("click", () => {
+        remember.classList.toggle("noteShifting");
+        spanEle.classList.toggle("spanShifting")
+        console.log("hellp");
+    })

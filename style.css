@@ -200,3 +200,70 @@ body{
     font-size: 20px;
     border-radius: 10px;
 }
+
+.live-clock-remember{
+    margin-left: 50px;
+    margin-top: 200px;
+}
+
+.remember{
+    display: inline-block;
+    padding: 20px;
+    background: rgb(253, 73, 103);
+    color:#fff;
+    position: absolute;
+    right: -320px ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span{
+    cursor: pointer;
+    position: absolute;
+    right: 80px;
+    background: rgb(253, 73, 103);
+    color:#fff;
+    font-size: 25px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif ;
+    border-radius: 10px;
+    animation: spanEl 1s infinite;
+}
+
+
+@keyframes spanEl {
+    0%{
+        transform: translateX(-5px);
+    }
+
+    50%{
+        transform: translateX(-20px);
+    }
+
+
+    75%{
+        transform: translateX(-5px);
+    }
+
+    90%{
+        transform: translateX(-20px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+
+}
+
+span:hover{
+    animation: none;
+}
+
+.spanShifting{
+    right: 400px;
+    animation: none;
+}
+
+.noteShifting{
+    right: 0;
+}
+
